@@ -1,0 +1,152 @@
+
+#centralni{
+  height: 100%;
+  background-color:#17202A;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content:center;
+  align-items:flex-start;
+  justify-items: center;
+  color:#01fe87;
+  
+} 
+
+.blokovi {
+  border: solid;
+  border-radius: 1em;
+  margin: 2em  1em  1em;
+  padding:0 1em 1em;
+  width: 70%;
+} 
+.naslov {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  width:max-content;
+  background-color:#17202A;
+  padding: 0 0.15em;
+}
+
+.naslovi{
+  text-align: center;
+  height: 80px;
+  padding-top: 20px;
+  font-size: 50px;
+  background-color:#17202A;
+  color: #01fe87;
+}
+
+.blokovi>ul>li{
+  list-style-type: none;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.blokovi>h2{
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width:1250px){
+ #centralni{
+   grid-template-columns: none;
+ }
+ 
+}
+#footer{
+  position:relative;
+  display: grid;
+  grid-template-columns: 20% 35% 25%;
+  place-content: center center; 
+  background-color: black;
+  color:#01fe87;
+  border-top: 2px solid black;
+}
+
+#nesto{
+  padding-top: 1.2em;
+  padding-left: 2.3em;
+  padding-bottom: 1em;
+}
+
+#par{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#donji{
+  grid-column-start: span 3;
+  padding: 0.3em 2em;
+  position:relative;
+}
+#meni{
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    padding-left: 2%;   
+    background-color:#17202A;
+    border-bottom: 2px solid #17202A;
+	padding:15px;
+  }
+     
+  #meni>ul{
+    list-style-type: none;
+    display: flex;
+    flex: 4;
+    align-items: center;
+    justify-content: flex-end;
+    
+  }
+ 
+  #meni>ul>a{
+    margin:0;
+    height: 77px;
+    display:flex;
+    align-items: center;
+    padding:0 2em;
+    font-size: 38px;
+	color:#01fe87;
+  }
+  
+  #meni>ul>a:hover{
+    background-color: black;
+    }
+  #meni>ul>a:hover{
+    color:#01fe87;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+	text-transform:upper-alpha;
+	transition: 0.5s;
+	letter-spacing:0.135em;
+	position:relative;
+	left:-20px;
+  }
+  
+  a:hover
+  {
+	  background: var(--clr);
+	  letter-spacing:0.25em;
+	  box-shadow: 0 0 35px var(--clr);
+  }
+  *{
+    margin: 0;
+    padding:0;
+    font-family:inherit;
+  }
+#monitor
+{
+	color:black;
+	padding:25px;
+	text-align:center;
+	font-size:6rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#monitor
+{
+	color:transform;
+	-webkit-text-stroke: 3px #01fe87;
+}
